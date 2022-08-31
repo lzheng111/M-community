@@ -1,0 +1,41 @@
+<view class="serve">
+  <view class="serve-item">
+    <p>账号与安全</p>
+    <van-icon name="arrow" />
+  </view>
+  <view class="serve-items">
+  <view class="serve-item">
+    <p>通用</p>
+    <van-icon name="arrow" />
+  </view>
+  <view class="serve-item">
+    <p>隐私</p>
+    <van-icon name="arrow" />
+  </view>
+</view>
+<view class="serve-items">
+  <view class="serve-item">
+    <p>关于</p>
+    <van-icon name="arrow" />
+  </view>
+  <view class="serve-item">
+    <p>帮助和反馈</p>
+    <van-icon name="arrow" />
+  </view>
+  <view class="serve-item">
+    <p>检查更新</p>
+    <van-icon name="arrow" />
+  </view>
+  <view class="serve-items">
+    <navigator url="/pages/login/login" class="serve-item">
+    <p bindtap="break"  style="width: 100%; text-align: center;">切换账号</p>
+  </navigator>
+  <navigator url="/pages/login/login"   class="serve-item">
+    <p bindtap="break" style="width: 100%;text-align: center;">退出登录</p>
+  </navigator>
+  </view>
+</view>
+ 
+
+  
+</view>

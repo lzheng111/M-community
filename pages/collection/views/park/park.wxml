@@ -1,0 +1,45 @@
+<!--pages/collection/views/park/park.wxml-->
+<view class="park">
+  <view class="row1">
+    <van-icon name="bullhorn-o"  color="#fff" style="padding-left: 40rpx;"/> 
+    <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="2000">
+      <block wx:for="{{msgList}}" wx:key="index">
+        <swiper-item>
+         <view class="swiper_item">{{item.title}}</view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view wx:if="{{!userInfo.carnumber}}" class="park-remind">
+    <icon type="info" size="200rpx" class="info-icon"></icon>
+    <p class="info-title">您还未登记车牌号</p>
+    <button class="info-btn" bindtap="goToOder">立即登记</button>
+  </view>
+  <view wx:if="{{userInfo.carnumber}}" class="park-item">
+    <view class="park-message">
+      <p>业主：{{userInfo.name}} </p>
+      <p>住址：{{userInfo.site}}</p>
+      <p>是否有停车位：{{fn.turn(userInfo.park)}}</p>
+      <p>停车位地址：{{userInfo.carsite}}</p>
+    </view>
+    <view class="park-carnumber">
+      <van-icon name="edit" size="55rpx"  color="#66B3FF"  class="edit" bindtap="udateCarNumber"/>
+      <p>车牌号</p>
+      <p><i style="color:	#66B3FF ; font-size: 60rpx;">{{userInfo.carnumber}}</i></p>
+    </view>
+  </view>
+</view>
+
+
+<wxs module="fn">
+      module.exports = {
+          turn: function(str){
+            if(str ===true){
+              return "已有停车位"
+            }else{
+              return "未有停车位"
+            }
+          },
+      }
+  </wxs>

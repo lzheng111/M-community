@@ -1,0 +1,11 @@
+<!--pkgA/pages/personalserve/personalserve.wxml-->
+<view class="personal-serve">
+  <view class="serve-item">
+    <form bindsubmit="formSubmit" class="form-item"> 
+      <input  bindinput="bindinput" name="name" class="serve-input" placeholder="{{name}}" />
+      <p style=" font-size: 30rpx;color: #BEBEBE;margin-left: 190rpx;">请输入新内容</p>
+      <button  class="submit{{value ?'-active':''}}"  form-type="submit">修改</button>
+    </form>
+  </view>
+</view>
+

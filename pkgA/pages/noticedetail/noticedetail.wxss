@@ -1,0 +1,42 @@
+.detail{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.headle{
+  margin-top: 25rpx;
+  font-size: 50rpx;
+  font-weight: bold;
+  padding-left: 35rpx;
+}
+.headle-item{
+  display: flex;
+  width: 100%;
+  margin-top: 40rpx;
+}
+.headle-icon{
+  padding-left: 35rpx;
+}
+.headle-name{
+  font-size: 28rpx;
+  padding-left: 8rpx;
+  color: 		#4F4F4F;
+}
+.headle-day{
+  font-size: 28rpx;
+  padding-left: 35rpx;
+  color: 	#ADADAD;
+}
+.headle-time{
+  font-size: 28rpx;
+  padding-left: 10rpx;
+  color: 	#ADADAD;
+}
+.main{
+  margin: 50rpx 35rpx 0;
+}
+.main-title{
+  line-height: 50rpx;
+  letter-spacing:2rpx;
+  line-height: 60rpx;
+}

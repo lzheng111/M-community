@@ -1,0 +1,71 @@
+<view class="personal">
+  <view class="personal-item" style="padding-right: 20rpx; height: 150rpx;">
+    <p>头像</p>
+    <view class="user-pic">
+       <image src="{{userPic}}" style="width: 110rpx;height: 110rpx; border-radius: 10rpx;" />
+       <van-icon name="arrow" class="icon"/>
+    </view>
+    
+  </view>
+  <view class="personal-item" style="padding-right: 20rpx;" data-id = "{{userInfo.name}}" bindtap="handleChange">
+    <p>姓名</p>
+    <p>{{userInfo.name}}<van-icon name="arrow" class="icon"/></p>
+  </view>
+  <view class="personal-item" style="padding-right: 20rpx;" data-id = "{{userInfo.tel}}" bindtap="handleChange">
+    <p>电话</p>
+    <p>{{userInfo.tel}}<van-icon name="arrow" class="icon"/></p>
+  </view>
+  <view class="personal-item" style="padding-right: 20rpx;" bindtap="button">
+    <p>性别</p>
+    <p>{{userInfo.sex}}<van-icon name="arrow" class="icon"/></p>
+  </view>
+  <view class="ActionSheet" >
+    <action-sheet bindchange="actionsheetChange" hidden="{{showActionsheet}}">
+       <block wx:for="{{groups}}" wx:key="index" class="ActionSheet-item"> 
+         <action-sheet-item bindtap="itemTap" data-sex="{{item.sex}}" >{{item.sex}}</action-sheet-item>
+       </block>
+
+       <action-sheet-cancel >取消</action-sheet-cancel>
+
+    </action-sheet>
+  </view>
+<view class="personal-items">
+  <view class="personal-item">
+    <p>住址</p>
+    <p>{{userInfo.site}}</p>
+  </view>
+  <view class="personal-item">
+    <p>面积</p>
+    <p>{{userInfo.area}} m²</p>
+  </view>
+  <view class="personal-items">
+    <view class="personal-item">
+    <p>是否有停车位</p>
+    <P>{{fn.turn(userInfo.park)}}</P>
+  </view> <view class="personal-item">
+    <p>停车位地址</p>
+    <p>{{userInfo.carsite}}</p>
+  </view>
+</view>
+ <view class="personal-item">
+    <p>车牌号</p>
+    <p>{{userInfo.carnumber}}</p>
+  </view>
+</view>
+
+</view>
+
+<wxs module="fn">
+      module.exports = {
+          turn:function(a){
+            if(a == true){
+              return "有"
+            }else{
+              return "没有"
+            }
+          },
+          reverse:function(arr){
+						return arr.reverse()
+					}
+      }
+  </wxs>

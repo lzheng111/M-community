@@ -1,0 +1,102 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "服务",
+          "pathName": "pages/collection/collection",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "缴费",
+          "pathName": "pages/collection/views/pay/pay",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "上门维修",
+          "pathName": "pages/collection/views/repairs/repairs",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "投诉箱",
+          "pathName": "pages/collection/views/complaint/complaint",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "停车管理",
+          "pathName": "pages/collection/views/park/park",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "历史缴费",
+          "pathName": "pages/profile/pages/payhistory/payhistory",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "历史维修",
+          "pathName": "pages/profile/pages/repairshistory/repairshistory",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "设置",
+          "pathName": "pages/profile/pages/serve/serve",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "历史反馈",
+          "pathName": "pages/profile/pages/retroactionhistory/retroactionhistory",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "个人消息",
+          "pathName": "pages/collection/views/notice/notice",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "位置",
+          "pathName": "pages/map/map",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "联系物业",
+          "pathName": "pages/profile/pages/toproperty/toproperty",
+          "query": "",
+          "scene": null,
+          "launchMode": "default"
+        }
+      ]
+    }
+  }
+}

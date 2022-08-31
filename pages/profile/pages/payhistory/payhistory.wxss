@@ -1,0 +1,140 @@
+page{
+  background: #f7f7f5;
+}
+.header{
+  position: relative;
+  margin-bottom: 40rpx;
+  margin-top: 30rpx;
+}
+.header-input{
+  height: 62rpx;
+ line-height: 62rpx;
+ padding:  0 36rpx;
+ margin: 22rpx 36rpx 14rpx 36rpx;
+ border: 1rpx solid #D9DDE1;
+ border-radius: 36rpx;
+ text-align: center;
+ box-shadow: 0 0 12rpx 0 rgba(193, 193, 193, 0.40);
+ background-color: white;
+ font-size: 28rpx;
+
+}
+.header-input-placeholder{
+ color: rgba(133, 133, 133, 0.60);
+ font-size:28rpx;
+}
+.header-input-icon{
+ position: absolute;
+ left: 50%;
+ top: 18rpx;
+ transform: translate(-184rpx);
+ color:white;
+}
+.project-empty{
+  font-size: 50rpx;
+  text-align: center;
+  margin-top: 100rpx;
+}
+
+
+
+.wehx-card_box {
+  padding: 0 30rpx;
+  margin:20rpx;
+  background:#ffffff;
+  border-radius:12rpx;
+  box-shadow: 0 0 12rpx 0 rgba(193, 193, 193, 0.50);
+}
+.wehx-flex_top{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 95rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.icon{
+  position: absolute;
+  top: 32rpx;
+  right: 20rpx;
+  font-size: 37rpx;
+}
+.wehx-title_blue{
+  color: #2ea7e0;
+  font-size: 30rpx;
+  font-weight: 500;
+}
+.weui-cell__hd,.weui-flex__item{
+  flex: 1;
+}
+.wehx-flex_middle {
+  padding: 20rpx 0;
+}
+.wehx-content_title{
+  width: 4.5em;
+  font-size: 24rpx;
+  color: #888888;
+}
+.wehx-custom_content{
+  font-size: 30rpx;
+  text-align: right;
+}
+.weui-flex {
+  display: flex;
+}
+.wehx-flex_middle .item-padding:not(:last-of-type) {
+  padding-bottom: 10rpx;
+}
+
+.iconfont {
+  padding-left: 10rpx;
+  font-size: 24rpx;
+}
+/*checkbox 选项框大小  */
+checkbox .wx-checkbox-input {
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 50%;
+  border-color: #2ea7e0;
+  vertical-align: middle;
+}
+/*checkbox选中后样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background:#2ea7e0;
+}
+/*checkbox选中后图标样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #ffffff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+
+.btn{
+  background-color:#97CBFF;
+  border: black;
+  margin-left:85%;
+  width:80rpx; 
+  height: 80rpx;
+  position:fixed; 
+  bottom:20px; 
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity:0.6
+  }
+  .btn-gotop 
+  { 
+  color:	#ffffff; 
+  position:absolute;
+  font-size:60rpx;
+  
+  } 
+  

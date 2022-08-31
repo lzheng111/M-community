@@ -1,0 +1,47 @@
+<view class="notice">
+  <view class="header">
+  <input 
+    type="text" 
+    class="header-input" 
+    placeholder="请输入要搜索的消息"
+    placeholder-class="header-input-placeholder"
+    bindinput="handleInputChange"
+  />
+  <icon 
+    type="search" 
+    class="header-input-icon"
+    size="14"
+    wx:if="{{showIcon}}"
+    />
+</view>
+<view class="project-empty"
+   hidden="{{!(searchList && searchList.length == 0)}}">
+   无搜索结果
+   </view>
+<block wx:for="{{searchList ? searchList :noticeList}}" wx:key="index">
+  <view class="notice-item" bindlongpress="deleteNotice" bindtap="goToMore" data-id="{{item._id}} " data-headline="{{item.headline}}" data-content="{{item.content}}" data-time="{{item.createdAt}}">
+    <view class="item-pic"> 
+      <van-icon name="bell" color="#fff" size="45rpx" />
+    </view>
+    <view class="item-main">
+      <p class="item-headline">
+       {{item.headline}}
+      </p>
+      <p class="item-content">
+        {{item.content}} 
+      </p>
+    </view>
+    <view class="item-time">
+      <p>{{fn.split(item.createdAt)}}</p>
+    </view>
+  </view>  
+</block>
+</view>
+
+<wxs module="fn">
+      module.exports = {
+          split: function(str){
+            return str.split('T')[0];
+          },
+      }
+  </wxs>

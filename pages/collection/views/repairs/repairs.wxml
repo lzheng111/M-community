@@ -1,0 +1,21 @@
+<view class="repairs">
+  <view class="repairs-item">
+    <view class="repairs-title">
+    <p>业主：</p>
+    <p>电话：</p>
+    <p>住址：</p>
+    <p>维修内容：</p>
+    </view>
+    <form bindsubmit="formSubmit" class="form-item">
+      <input class="input-item" name= "name" type="text" value="{{userInfo.name}}" />
+      <input class="input-item" name="tel" type="number" value="{{userInfo.tel}}" />
+      <input class="input-item" name= "site" type="text" value="{{userInfo.site}}" />
+      <textarea class="detailText" 
+          placeholder="输入您维修内容"
+          name="content"
+          >
+</textarea>
+      <button class="submit" form-type="submit">预约维修</button>
+    </form>
+  </view>
+</view>

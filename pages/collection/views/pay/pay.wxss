@@ -1,0 +1,63 @@
+page{
+  background-color: 	#faf9f9f3;
+}
+.pay{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.pay-item{
+  position: relative;
+  margin: 30rpx 20rpx;
+  height: 310rpx;
+  border-radius:12rpx;
+  box-shadow: 3rpx 4rpx 7rpx 8rpx 	#f1f1f1;
+}
+.pay-headle{
+  height: 60rpx;
+}
+.pay-name{
+  position: absolute;
+  left:30rpx;
+  top: 15rpx;
+  font-size: 32rpx;
+}
+.pay-state{
+  position: absolute;
+  right: 30rpx;
+  top: 15rpx;
+  color:	#0080FF ;
+  font-size: 32rpx;
+}
+
+.pay-main{
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+.pay-main p{
+  font-size: 30rpx;
+  margin-bottom: 15rpx;
+}
+.pay-btn{
+  position: absolute;
+  bottom: 20rpx;
+  right: 30rpx;
+  font-size: 22rpx;
+  background-color: 	#0080FF;
+  color: white;
+  border-radius: 12rpx;
+}
+.pay-remind{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.success-icon{
+  margin-top: 50rpx;
+}
+.success-title{
+  font-size: 40rpx;
+  margin-top: 30rpx;
+}

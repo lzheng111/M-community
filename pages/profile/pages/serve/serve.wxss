@@ -1,0 +1,33 @@
+page{
+  background: #f7f7f5;
+  height: 100%;
+}
+.serve{
+  position: relative;
+  height: 100%;
+}
+.serve-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 32rpx;
+  padding: 0 40rpx;
+  border-bottom: 1rpx solid 	#F0F0F0;
+}
+.serve-items{
+  margin-top: 30rpx;
+}
+.nav{
+  width: 100%;
+  display: flex;
+
+}
+.break{
+  background-color: white;
+  font-size: 35rpx;
+  border-bottom: 1rpx solid 	#F0F0F0;
+
+}

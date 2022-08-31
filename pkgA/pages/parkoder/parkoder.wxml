@@ -1,0 +1,11 @@
+<!--pkgA/pages/parkoder/parkoder.wxml-->
+<view class="park-Oder">
+  <view class="oder-item">
+    <form bindsubmit="formSubmit" class="form-item"> 
+      <input  bindinput="bindinput" name="carnumber" class="oder-input" placeholder="请输入您的车牌号" />
+
+      <button  class="submit{{value ?'-active':''}}"  form-type="submit">登记</button>
+    </form>
+    <p class="oder-title">业主登记完车牌号后进出入停车场不用登记</p>
+  </view>
+</view>

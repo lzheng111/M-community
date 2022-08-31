@@ -1,0 +1,25 @@
+<view class="detail">
+  <p class="headle">{{headline}}</p>
+  <view class="headle-item" >
+    <van-icon name="friends-o" class="headle-icon" />
+    <p class="headle-name">物业管理处</p>
+    <p class="headle-day">{{fn.split(createdAt)}}</p>
+    <p class="headle-time">{{fn.split2(createdAt)}}</p>
+  </view>
+<view class="main">
+  <p class="main-title">{{content}}</p> 
+</view>
+</view>
+
+<wxs module="fn">
+      module.exports = {
+          split: function(str){
+            return str.split('T')[0];
+          },
+          split2: function(str){
+           var a = str.split('T')[1];
+           return a.split('.')[0]
+          },
+  
+      }
+  </wxs>

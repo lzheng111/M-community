@@ -1,0 +1,35 @@
+<!--pages/map/map.wxml-->
+<view style ="width: 100%;height: 100%;">
+  <map 
+    id="map"
+    subkey="{{subKey}}"
+    style="width: 100%;height: 100%;"
+    latitude="{{latitude}}"
+    longitude="{{longitude}}"
+    scale="{{15}}"  
+    markers="{{markers}}"
+    circles="{{circles}}"
+    polygons="{{polygons}}"
+    enable-3D="{{enable3d}}"
+    show-location="{{showLocation}}"
+    show-compass="{{showCompass}}"
+    enable-zoom="{{enableZoom}}"
+    enable-rotate="{{enableRotate}}"
+    enable-satellite="{{enableSatellite}}"
+    enable-traffic="{{enableTraffic}}"
+    enable-overlooking="{{enableOverlooking}}"
+    enable-scroll="{{enableScroll}}"
+    bindmarkertap="handleMarkerTap"
+  >
+  </map>
+  <view class="ActionSheet" >
+    <action-sheet bindchange="actionsheetChange" hidden="{{showActionsheet}}">
+       <block wx:for="{{groups}}" wx:key="index" class="ActionSheet-item"> 
+         <action-sheet-item bindtap="itemTap" data-sex="{{item.sex}}" >{{item.sex}}</action-sheet-item>
+       </block>
+
+       <action-sheet-cancel >取消</action-sheet-cancel>
+
+    </action-sheet>
+  </view>
+</view>

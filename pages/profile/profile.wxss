@@ -1,0 +1,86 @@
+/* pages/profile/profile.wxss */
+page{
+  background-color: 	#faf9f9f3;
+}
+.headle{
+  background-color: #fff;
+  height: 280rpx;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  box-shadow: 1rpx 3rpx 3rpx 4rpx 	#f1f1f1;
+}
+.userImg{
+  margin-top: 25rpx;
+  width: 120rpx;
+  height: 120rpx;
+  text-align: center;
+  line-height: 140rpx;
+  border-radius: 60rpx;
+  background-color: rgb(247, 243, 243);
+}
+.userpic{
+  width:100%;
+  height: 100%;
+  border-radius: 60rpx;
+}
+
+.userName,.userSite{
+  margin-top: 15rpx;
+  font-size: 32rpx;
+}
+
+.indent{
+  background-color: #fff;
+  height: 250rpx;
+  display: flex;
+  flex-direction: column;
+  margin:40rpx 15rpx;
+  box-shadow: 3rpx 4rpx 7rpx 8rpx 	#f1f1f1;
+  border-radius: 30rpx;
+}
+.indent-title{
+  font-size: 32rpx;
+  margin-left: 25rpx;
+  margin-top: 15rpx;
+}
+.indents{
+  display: flex;
+  margin-top: 30rpx;
+}
+.indent-item{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.indent-icon{
+  font-size: 62rpx;
+  margin-bottom: 25rpx;
+}
+.indent-p{
+  font-size: 30rpx;
+}
+
+.more{
+  background-color: #fff;
+  height: 250rpx;
+  display: flex;
+  flex-direction: column;
+  margin: 40rpx 15rpx;
+  box-shadow: 3rpx 4rpx 7rpx 8rpx 	#f1f1f1;
+  border-radius: 30rpx;
+}
+.mores{
+  display: flex;
+  margin-top: 28rpx;
+}
+.more-item{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+

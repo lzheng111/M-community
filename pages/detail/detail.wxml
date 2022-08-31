@@ -1,0 +1,12 @@
+<view class="detail">
+  <p class="headle">{{headline}}</p>
+  <view class="headle-item" >
+    <van-icon name="friends-o" class="headle-icon" />
+    <p class="headle-name">物业管理处</p>
+    <p class="headle-day">{{createdData}}</p>
+    <p class="headle-time">{{createdTime}}</p>
+  </view>
+<view class="main">
+  <p class="main-title">{{content}}</p> 
+</view>
+</view>

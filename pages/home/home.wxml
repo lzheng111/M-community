@@ -1,0 +1,66 @@
+<!--pages/home/home.wxml-->
+<view class="header">
+  <input 
+    type="text" 
+    class="header-input" 
+    placeholder="请输入要搜索的公告"
+    placeholder-class="header-input-placeholder"
+    bindinput="handleInputChange"
+  />
+  <icon 
+    type="search" 
+    class="header-input-icon"
+    size="14"
+    wx:if="{{showIcon}}"
+    />
+</view>
+
+<swiper
+  previous-margin="18rpx" 
+  next-margin="18rpx"
+  circular="{{true}}"
+  autoplay="{{true}}"
+  class="swiper"
+  >
+  <swiper-item
+    wx:for="{{swiperList}}"
+    wx:key="index"
+    class="swiper-item">
+    <image class="swiper-img" src="{{item.url}}" />
+  </swiper-item>
+</swiper>
+<view class="notice" bindtouchstart="touchStart" bindtouchend="touchEnd">
+  <p class="notice-tap" >社区公告</p>
+  <view class="project-empty"
+   hidden="{{!(searchList && searchList.length == 0)}}">
+   无搜索结果
+   </view>
+  <view 
+    class="noticeItem"
+    wx:for="{{searchList ? searchList :noticeList}}"
+    wx:key="*this"
+    bindtap="handleCourseTap"
+    data-id="{{item._id}}">
+  <image class="noticeImg" src="../../resources/news.png" />
+     <view class="noticeMain">
+       <view class="notice-time">{{fn.split(item.createdAt)}}</view>
+       <view class="title">{{item.headline}}</view>
+     </view>
+  </view>
+
+</view>
+  <view class="btn" bindtap="gotop" wx:if="{{showBackToTop}}">
+  <van-icon name="back-top"  class="btn-gotop"/>
+</view>
+
+
+<wxs module="fn">
+      module.exports = {
+          split: function(str){
+            return str.split('T')[0];
+          },
+          replace:function(str){
+            return str.replace('\\','/')
+          }
+      }
+  </wxs>

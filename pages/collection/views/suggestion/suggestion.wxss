@@ -1,0 +1,39 @@
+/* pages/collection/views/complaint/complaint.wxss */
+.complaint-item{
+  position: relative;
+  height: 1050rpx;
+  margin: 10rpx 30rpx;
+  border-radius: 20rpx;
+}
+.form-item{
+  display: flex;
+  flex-direction: column;
+}
+.submit{
+  position: absolute;
+  right: 20rpx;
+  bottom: 10rpx;
+  font-size: 30rpx;
+  width: 140rpx;
+  border:none;
+  background-color: 	#F0F0F0;
+  color: 	#ADADAD	;
+  }
+  .submit-active{
+    position: absolute;
+    right: 20rpx;
+    bottom: 10rpx;
+    font-size: 30rpx;
+    width: 140rpx;
+    border:none;
+    background-color: 	#46A3FF;
+    color: 	white	;
+    }
+.detailText{
+  width: 90%;
+  height: 800rpx;
+  margin: 50rpx auto;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  box-shadow: 3rpx 4rpx 7rpx 8rpx 	#f1f1f1;
+}

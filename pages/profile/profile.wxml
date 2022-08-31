@@ -1,0 +1,47 @@
+<!--pages/profile/profile.wxml-->
+<view class="profile">
+  <view class="headle" bindtap="goToPersonal" >
+    <view class="userImg">
+     <image wx:if="{{userPic}}" src="{{userPic}}" class="userpic" />
+     <van-icon wx:if="{{!userPic}}" name="manager-o" size="70rpx" color="	#9D9D9D" />
+    </view>
+      <p class="userName">{{userInfo.name}}</p>
+      <p class="userSite">{{userInfo.site}}</p>
+ </view>
+  <view class="indent">
+    <p class="indent-title">常用功能</p>
+    <view class="indents"> 
+    <view class="indent-item" bindtap="goToPayHistory">
+      <van-icon class="indent-icon" name="idcard" color="	#FFD306" />
+      <p class="indent-p">历史缴费</p>
+    </view>
+    <view class="indent-item" bindtap="goToRepairsHistory">
+      <van-icon class="indent-icon" name="discount" color="	#0072E3" />
+      <p class="indent-p">历史维修</p>
+    </view>
+    <view class="indent-item" bindtap="goToRetroactionHistory">
+      <van-icon class="indent-icon" name="chat-o" color="	#00DB00" />
+      <p class="indent-p">历史反馈</p>
+    </view>
+  </view>
+</view>
+
+  <view class="more">
+  <p class="indent-title">更多服务</p>
+  <view class="mores">
+    <view class="more-item" bindtap="gpToProperty">
+      <van-icon  class="indent-icon" name="service-o" color="" />
+      <p class="indent-p">联系物业</p>
+    </view>
+    <view class="more-item">
+      <van-icon class="indent-icon" name="info-o" bindtap="goToMap" />
+      <p class="indent-p">关于我们</p>
+    </view>
+    <view class="more-item" bindtap="goToServe">
+      <van-icon  class="indent-icon" name="setting-o" />
+      <p class="indent-p">设置</p>
+    </view>
+    </view>
+  </view>
+
+</view>

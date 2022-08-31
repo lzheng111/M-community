@@ -1,0 +1,24 @@
+<view class="pay">
+  <view wx:if="{{payList.length == 0}}" class="pay-remind">
+    <icon type="success" size="200rpx" class="success-icon"></icon>
+    <p class="success-title">您已完成全部缴费</p>
+  </view>
+
+  <view wx:for="{{payList}}" wx:key="index" class="pay-item" >
+    <view class="pay-headle">
+      <p class="pay-name">{{item.content}}</p>
+      <p class="pay-state">待缴费</p>
+    </view>
+  <view class="pay-main">
+    <p>住址:  {{item.site}}</p> 
+    <p>面积: {{item.area}} ㎡ </p>
+    <p>订单编号:  {{item._id}}</p> 
+    <p>缴费金额:  <i style="color: red;">￥{{item.money}}</i></p> 
+  </view>
+  <button class="pay-btn" bindtap="btnToOder" data-id="{{item}}">
+    去缴费
+  </button>
+
+</view>
+</view>
+

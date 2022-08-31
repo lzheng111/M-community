@@ -1,0 +1,28 @@
+<!--pages/collection/views/payoder/payoder.wxml-->
+<view class="payOder">
+  <view class="oderItem">
+    <view class="oder-content">缴费清单</view>
+    <p class="oser-title">订单名称：{{payOderList.content}}</p>
+    <p class="oser-title">发布时间：{{fn.split1(payOderList.createdAt)}}  {{fn.split2(payOderList.createdAt)}}</p>
+    <p class="oser-title">订单号：{{payOderList._id}}</p>
+    <p class="oser-title">业主：{{payOderList.name}}</p>
+    <p class="oser-title">地址：{{payOderList.site}}</p>
+    <p class="oser-title">面积：{{payOderList.area}} ㎡</p>
+    <p class="oser-title">物业费：{{payOderList.money}}</p>
+    <p class="oser-title">状态：<i style="color: red;">待缴费</i></p>
+    <p class="oser-titles">注：物业费以<i style="font-weight: bold; color: red;"> 2.5元/㎡ </i>收取,如果对订单有疑问可以前往物业管理处咨询或请打电话<i style="font-weight: bold; color: red;">12345678900</i>进行咨询</p>
+    <button class="payItem" bindtap="handlePay">支付</button>
+  </view>
+  
+</view>
+<wxs module="fn">
+      module.exports = {
+          split1: function(str){
+            return str.split('T')[0];
+          },
+          split2: function(str){
+            var strs = str.split('T')[1]
+            return strs.split('.')[0];
+					},
+      }
+  </wxs>

@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="login">
+  <form bindsubmit="formSubmit">
+    <input class="telInput" name="tel" type="number"  placeholder="手机号码" />
+    <input class="pwdInput" name= "password" type="text" password placeholder="请输入密码" />
+    <button class="submit" form-type="submit">登录</button>
+
+  </form>
+  <p class="p-title" >登录即代表同意<i style="color:	#0072E3;">《社区物业平台用户协议和隐私政策》</i></p>
+</view>
+

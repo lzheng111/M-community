@@ -1,0 +1,29 @@
+/* pages/login/login.wxss */
+.login{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.img{
+  height: 330rpx;
+}
+.wx-login{
+  margin-top: 20rpx;
+  background-color:		#00DB00 ;
+  color: white;
+  border-radius: 10rpx;
+  font-size: 35rpx;
+}
+.tel-login{
+  margin-top: 60rpx;
+  background-color:		white ;
+  color: 		#7B7B7B;
+  border-radius: 10rpx;
+  font-size: 35rpx;
+
+}
+.p-title{
+  margin-top: 550rpx;
+  font-size: 25rpx;
+  color: 	#7B7B7B;
+}

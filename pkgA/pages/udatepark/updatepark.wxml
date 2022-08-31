@@ -1,0 +1,10 @@
+
+<view class="park-Oder">
+  <view class="oder-item">
+    <form bindsubmit="formSubmit" class="form-item"> 
+      <input  bindinput="bindinput" name="carnumber" class="oder-input" placeholder="请输入要修改的车牌号" />
+      <p style=" font-size: 30rpx;color: #BEBEBE;margin-left: 140rpx;">原车牌号：{{carnumber}}</p>
+      <button  class="submit{{value ?'-active':''}}"  form-type="submit">修改</button>
+    </form>
+  </view>
+</view>

@@ -1,0 +1,56 @@
+.repairs-item{
+  display: flex;
+  height: 1000rpx;
+  margin: 50rpx 30rpx;
+  border-radius: 20rpx;
+  box-shadow: 3rpx 4rpx 7rpx 8rpx 	#f1f1f1;
+}
+.repairs-title{
+  margin: 40rpx 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.repairs-title p{
+  height: 62rpx;
+  width: 155rpx;
+  font-size: 32rpx;
+  margin-top:40rpx;
+  font-weight: bold;
+  text-align: left;
+}
+
+.form-item{
+margin-top: 38rpx;
+margin-left: -10rpx;
+}
+.input-item{
+  height: 50rpx;
+  width:80%;
+  margin-top: 40rpx;
+  border: 1px solid 	#d0d0d0;
+  border-radius:20rpx;
+  background-color:	#FCFCFC ;
+  font-size: 30rpx;
+  padding-left: 20rpx;
+}
+
+.detailText{
+  border: 1px solid 	#d0d0d0;
+  width:460rpx ;
+  margin: 58rpx 0rpx;
+  border-radius: 10rpx;
+  padding-left: 20rpx;
+  font-size: 32rpx;
+  padding-top: 10rpx;
+}
+.submit{
+  margin-left: -58rpx;
+  margin-top: 110rpx;
+  width: 430rpx;
+  font-size: 35rpx;
+  background-color: 	#46A3FF;
+  color: white;
+  border-radius: 80rpx;
+  
+  
+}

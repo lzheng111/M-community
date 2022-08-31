@@ -1,0 +1,86 @@
+<view class="header">
+  <input 
+    type="text" 
+    class="header-input" 
+    placeholder="请输入要搜索的反馈信息"
+    placeholder-class="header-input-placeholder"
+    bindinput="handleInputChange"
+  />
+  <icon 
+    type="search" 
+    class="header-input-icon"
+    size="14"
+    wx:if="{{showIcon}}"
+    />
+</view>
+<view class="project-empty"
+   hidden="{{!(searchList && searchList.length == 0)}}">
+   无搜索结果
+   </view>
+
+<view class="wehx-card_box" wx:for="{{searchList ? searchList : array}}" wx:key="index" data-id="index" bindtouchstart="touchStart" bindtouchend="touchEnd" >
+	<view class="wehx-flex_top">
+		<label class="weui-cell__hd " bindtap="checkRoles">
+		 <p class="wehx-title_blue{{item.state ? '-active' :'' }}" >
+       {{fn.turn(item.state)}}
+     </p> 
+		</label>
+		<view class="weui-cell__bd right" data-index='{{index}}' catchtap='panel'>
+    	<view style="font-size:26rpx;" wx:if="{{item.toggle == false }}">
+        <van-icon name="arrow-down" class="icon" />
+      </view>
+			<view style="font-size:26rpx;" wx:else>
+        <van-icon name="arrow-up"class="icon" />
+      </view>
+		
+		</view>
+	</view>
+	<view class="wehx-flex_middle">
+    <view class="weui-flex__item weui-flex item-padding">
+			<view class="wehx-content_title left">反馈内容</view>
+			<view class="wehx-custom_content weui-flex__item right">{{item.content}}</view>
+		</view>
+    <view class="weui-flex__item weui-flex item-padding">
+			<view class="wehx-content_title left">反馈类型</view>
+			<view class="wehx-custom_content weui-flex__item right">{{item.type}}</view>
+		</view>
+    <view class="weui-flex__item weui-flex item-padding">
+			<view class="wehx-content_title left">反馈时间</view>
+			<view class="wehx-custom_content weui-flex__item right">{{fn.split(item.createdAt)}}</view>
+		</view>
+
+		<block wx:if="{{item.toggle == true}}">
+    	<view class="weui-flex__item weui-flex item-padding">
+				<view class="wehx-content_title left">回复</view>
+				<view class="wehx-custom_content weui-flex__item right">{{item.comment}}</view>
+			</view>
+      <view class="weui-flex__item weui-flex item-padding">
+				<p class="wehx-custom_content weui-flex__item right" bindtap="isDelete" style="color: 	#FF5151;margin-top: 20rpx;" data-id="{{item._id}}" wx:if="{{item.state}}">删除</p>
+			</view>
+		</block>
+	</view>
+</view>
+<view class="btn" bindtap="gotop" wx:if="{{showBackToTop}}">
+  <van-icon name="back-top"  class="btn-gotop"/>
+</view>
+
+
+
+
+<wxs module="fn">
+      module.exports = {
+          split: function(str){
+            return str.split('T')[0];
+          },
+          turn:function(a){
+            if(a == true){
+              return "已回复"
+            }else{
+              return "未回复"
+            }
+          },
+          reverse:function(arr){
+						return arr.reverse()
+					}
+      }
+  </wxs>

@@ -1,0 +1,12 @@
+<view class="property">
+  <view class="property-item">
+    <van-icon name="location" color="#46A3FF" size="80rpx" class="item-icon"/>
+    <view class="item-main">
+      <p>物业管理处</p>
+      <p bindtap="totel" class="main-tel">联系电话：12345678900</p>
+      <p>地址：一栋101</p>
+      <p>距离您距离：{{distance}}km</p>
+    </view>
+    <button class="item-btn" bindtap="goToproperty">导航</button>
+  </view>
+</view>

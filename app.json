@@ -1,0 +1,86 @@
+{
+  "pages": [
+    
+    "pages/login/login",
+    "pages/home/home",
+    "pages/detail/detail",
+    "pages/index/index",
+    "pages/profile/profile",
+    "pages/collection/collection",
+    "pages/collection/views/pay/pay",
+    "pages/collection/views/repairs/repairs",
+    "pages/collection/views/park/park",
+    "pages/collection/views/notice/notice",
+    "pages/collection/views/complaint/complaint",
+    "pages/collection/views/suggestion/suggestion",
+    "pages/collection/views/payoder/payoder",
+    "pages/profile/pages/payhistory/payhistory",
+    "pages/profile/pages/repairshistory/repairshistory",
+    "pages/profile/pages/retroactionhistory/retroactionhistory",
+    "pages/profile/pages/serve/serve",
+    "pages/profile/pages/personal/personal",
+    "pages/map/map",
+    "pages/profile/pages/toproperty/toproperty"
+  ],
+  "subPackages": [
+    {
+      "root": "pkgA",
+      "pages": [
+        "pages/repairsoder/repairsoder",
+        "pages/parkoder/parkoder",
+        "pages/udatepark/updatepark",
+        "pages/personalserve/personalserve",
+        "pages/noticedetail/noticedetail"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": " ",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index"
+  },
+  "tabBar": {
+    "selectedColor": "#0080FF",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "resources/home.png",
+        "selectedIconPath": "resources/home_active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/collection/collection",
+        "iconPath": "resources/collection.png",
+        "selectedIconPath": "resources/collection_active.png",
+        "text": "服务"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "resources/my.png",
+        "selectedIconPath": "resources/my_active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用户导航"
+    }
+  },
+  "useExtendedLib": {
+    "weui": true
+  },
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.19",
+      "provider": "wx50b5593e81dd937a"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

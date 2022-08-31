@@ -1,0 +1,19 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+    <image src="../../resources/img.png"  class="img"/>
+
+  <view class="login-item">
+    <button
+     class="wx-login"
+      bindtap="login" 
+      open-type="getPhoneNumber" 
+      bindgetphonenumber="getPhoneNumber"
+      >
+        微信授权登录
+    </button>
+    <navigator url="/pages/index/index">
+      <button class="tel-login">手机号码登录</button>
+    </navigator>
+  </view>
+  <p class="p-title" >登录即代表同意<i style="color:	#0072E3;">《社区物业平台用户协议和隐私政策》</i></p>
+</view>

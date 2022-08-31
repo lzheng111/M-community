@@ -1,0 +1,33 @@
+/* pages/collection/views/payoder/payoder.wxss */
+.oderItem{
+  position: relative;
+  margin:50rpx 30rpx;
+  box-shadow: 3rpx 4rpx 7rpx 8rpx 	#f1f1f1;
+  height: 1100rpx;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.oder-content{
+  margin: 35rpx auto;
+  font-weight: bold;
+}
+.oser-title{
+  margin: 20rpx 25rpx;
+  font-size: 32rpx;
+}
+.oser-titles{
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-size: 28rpx;
+  color: 		#9D9D9D	;
+}
+.payItem{
+  position: absolute;
+  bottom: 30rpx;
+  right: 30rpx;
+  font-size: 35rpx;
+  background-color: 	#02DF82;
+  color: white;
+}

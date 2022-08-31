@@ -1,0 +1,93 @@
+.park{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.row1{
+  margin: 0 30rpx;
+  margin-top: 20rpx;
+  height: 90rpx;
+  border-radius:10rpx;
+  line-height: 90rpx;
+  display: flex;
+  background-color: 			#46A3FF;
+  justify-content: center;
+}
+
+.swiper_container {
+  height: 100%;
+  width: 80vw;
+  padding-left: 20rpx;
+ }
+ .swiper_item {
+  margin-top: 3rpx;
+  color: white;
+  font-size: 25rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: 2px;
+ }
+
+ .park-remind{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ .info-icon{
+   margin-top: 50rpx;
+ }
+ .info-title{
+   font-size: 40rpx;
+   margin-top: 30rpx;
+ }
+ .info-btn{
+   margin-top: 70rpx;
+   font-size: 35rpx;
+   background-color:		#46A3FF;
+   color: white;
+ }
+
+ .park-item{
+   margin-top: 20rpx;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+  
+ }
+ .park-message{
+   margin:30rpx 37rpx;
+   width: 90%;
+   box-shadow: 3rpx 4rpx 7rpx 8rpx 	#f1f1f1;
+   height: 390rpx;
+   border-radius: 20rpx;
+   display: flex;
+   flex-direction: column;
+ }
+ .park-message p{
+   margin: 28rpx 30rpx 20rpx 30rpx;
+   width: 100%;
+   font-size: 32rpx;
+ }
+ .park-carnumber{
+   position: relative;
+   margin: 40rpx 37rpx;
+   border-radius: 20rpx;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   box-shadow: 3rpx 4rpx 7rpx 8rpx 	#f1f1f1;
+   height: 300rpx;
+ }
+ .park-carnumber p{
+   margin-top: 70rpx;
+ }
+ .park-carnumber p:last-child{
+   margin-top: 30rpx;
+ }
+ .edit{
+   position: absolute;
+   top: 15rpx;
+   right:25rpx;
+ }

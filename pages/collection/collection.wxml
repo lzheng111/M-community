@@ -1,0 +1,51 @@
+<view class="collection">
+
+  <view class="row1">
+    <van-icon name="bullhorn-o"  color="#fff" style="padding-left: 40rpx;"/> 
+    <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="2000">
+      <block wx:for="{{msgList}}" wx:key="*this">
+        <swiper-item>
+         <view class="swiper_item">{{item.title}}</view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="row2">
+    <view class="row2-col1-1" bindtap="btnToPay">  
+        <p class="row2-p">
+          生活缴费
+        </p> 
+        <van-icon name="gold-coin-o" color="	#fff" class="item-icon" />
+    </view>
+   
+    <view class="row2-col2">
+      <view class="row2-col2-1"   bindtap="btnToRepairs">
+        <p>上门维修</p> 
+        <van-icon name="friends-o"  class="items-icon"/>
+       </view>
+       <view class="row2-col2-2" >
+         <view class="col2-2-item1" bindtap="btnToComplaint">
+            <p>投诉箱</p>
+            <van-icon name="notes-o"  class="items-icon" />
+           </view>
+          <view class="col2-2-item2"  bindtap="btnToSuggestion">
+            <p> 意见箱</p>
+            <van-icon name="edit"  class="items-icon" />
+
+          </view>
+         </view>   
+    </view>
+  </view>
+  <view class="row3">
+    <view class="row3-col1-1"  bindtap="btnToPark">
+      <p>停车管理</p >
+        <van-icon name="logistics"  class="items-icon"/>
+
+    </view>
+    <view class="row3-col1-2"  bindtap="btnToNotice">
+      <p> 个人通知</p>
+      <van-icon name="envelop-o" class="items-icon" />
+
+    </view>
+  </view>
+</view>

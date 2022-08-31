@@ -1,0 +1,14 @@
+<view class="complaint">
+  <view class="complaint-item">
+    <form bindsubmit="formSubmit" class="form-item">
+      <textarea class="detailText" 
+          placeholder="请输入您要投诉的内容"
+          name="content"
+          maxlength="-1"
+          bindinput="bindinput"
+          >
+      </textarea>
+      <button  class="submit{{value ?'-active':''}}" 	disabled="{{!value}}"  form-type="submit">反 馈</button>
+    </form>
+  </view>
+</view>

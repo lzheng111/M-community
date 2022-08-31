@@ -1,0 +1,28 @@
+.property-item{
+  display: flex;
+  height: 300rpx;
+  border-bottom: 1rpx solid 		#E0E0E0;
+}
+.item-icon{
+  flex: 2;
+}
+.item-main{
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.item-main p{
+  margin-top: 10rpx;
+  font-size: 32rpx;
+}
+.item-btn{
+  font-size: 30rpx;
+  background-color: 	#46A3FF;
+  color: white;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin-right: 30rpx;
+  margin-top: 190rpx;
+
+}
